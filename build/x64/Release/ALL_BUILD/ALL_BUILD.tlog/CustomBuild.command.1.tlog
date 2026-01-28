@@ -1,0 +1,10 @@
+^C:\USERS\310\DESKTOP\PROGECTS_CPP\HELLO_CPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/310/Desktop/progects_cpp/hello_cpp -BC:/Users/310/Desktop/progects_cpp/hello_cpp/build --check-stamp-file C:/Users/310/Desktop/progects_cpp/hello_cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
